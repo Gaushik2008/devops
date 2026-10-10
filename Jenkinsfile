@@ -12,7 +12,7 @@ pipeline {
 
         stage('Hello') {
             steps {
-                echo 'Hello World - Automatic Build Test'
+                echo 'THE NAME IS GAUSHIKKKK'
             }
         }
     }
