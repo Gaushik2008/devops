@@ -17,7 +17,7 @@ pipeline {
 
         stage('Hello') {
             steps {
-                echo 'Automatic Build Test'
+                echo 'Hello World - Polling Test'
             }
         }
     }
