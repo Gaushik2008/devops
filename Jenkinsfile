@@ -2,23 +2,41 @@
 pipeline {
     agent any
 
+    triggers {
+        pollSCM('H/1 * * * *')
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Gaushik2008/devops.git'
+                checkout scm
             }
         }
 
-        stage('Hello') {
+        stage('Verify GitHub Changes') {
             steps {
-                echo 'THE NAME IS GAUSHIKKKK'
+                echo 'SUCCESS: Jenkins fetched the latest GitHub code!'
+                echo 'Project: DevOps'
+                echo 'Repository: Gaushik2008/devops'
+                echo 'Branch: main'
+                echo "Build Number: ${BUILD_NUMBER}"
             }
         }
-         stage('One') {
+
+        stage('Build Status') {
             steps {
-                echo 'THE NAME IS OPTIMUS'
+                echo 'BUILD COMPLETED SUCCESSFULLY!'
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'PIPELINE RESULT: SUCCESS'
+        }
+
+        failure {
+            echo 'PIPELINE RESULT: FAILED'
         }
     }
 }
