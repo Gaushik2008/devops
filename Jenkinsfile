@@ -15,5 +15,10 @@ pipeline {
                 echo 'THE NAME IS GAUSHIKKKK'
             }
         }
+         stage('One') {
+            steps {
+                echo 'THE NAME IS OPTIMUS'
+            }
+        }
     }
 }
