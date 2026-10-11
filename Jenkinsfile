@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build Status') {
             steps {
-             echo 'AUTOMATIC POLLING VERIFIED - TEST 2'
+             echo 'GAUSHIK KUMAR G'
             }
         }
     }
