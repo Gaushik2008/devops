@@ -25,7 +25,7 @@ pipeline {
 
         stage('Build Status') {
             steps {
-                echo 'SUCCESS: AUTOMATIC BUILD TEST - OCTOBER 11'
+             echo 'AUTOMATIC POLLING VERIFIED - TEST 2'
             }
         }
     }
