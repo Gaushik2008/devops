@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build Status') {
             steps {
-             echo 'GAUSHIK KUMAR G'
+             echo '1. GAUSHIK KUMAR G'
             }
         }
     }
