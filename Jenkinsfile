@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build Status') {
             steps {
-             echo '1. GAUSHIK KUMAR G'
+             echo 'FINAL AUTOMATION TEST - 12 OCTOBER'
             }
         }
     }
